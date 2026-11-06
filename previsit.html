@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Before Your Rheumatology Visit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: single friendly column (max 680px) of collapsible question groups, then a reply step that produces a code to email */
+:root{
+  --bg:#f3f5f7; --surface:#ffffff; --ink:#16202b; --muted:#5b6876; --line:#d9dfe5; --scrim:rgba(15,21,27,.45);
+  --accent:#1f5f8b; --accent-soft:#e3edf5; --accent-ink:#ffffff; --ok:#2e7d4f; --ok-soft:#e2f2e8; --warn:#b7791f; --warn-soft:#f8eed9; --bad:#b23a3a; --bad-soft:#f7e1e1;
+  --f-display:"Familjen Grotesk",system-ui,sans-serif;
+  --f-body:"Public Sans",system-ui,-apple-system,sans-serif;
+  --f-data:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --r:12px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f151b; --surface:#17202a; --ink:#e6ecf1; --muted:#97a4b1; --line:#2a3642; --scrim:rgba(0,0,0,.6);
+  --accent:#6fb0de; --accent-soft:#1c3446; --accent-ink:#0b1620; --ok:#6fcf97; --ok-soft:#173024; --warn:#e6b65c; --warn-soft:#33291a; --bad:#ef8181; --bad-soft:#3a1d1f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f151b; --surface:#17202a; --ink:#e6ecf1; --muted:#97a4b1; --line:#2a3642; --scrim:rgba(0,0,0,.6);
+  --accent:#6fb0de; --accent-soft:#1c3446; --accent-ink:#0b1620; --ok:#6fcf97; --ok-soft:#173024; --warn:#e6b65c; --warn-soft:#33291a; --bad:#ef8181; --bad-soft:#3a1d1f; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.2}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+main{max-width:680px;margin:0 auto;padding-block:22px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+.hero{display:flex;flex-direction:column;gap:8px;padding-bottom:4px}
+.hero h1{font-size:28px;letter-spacing:-.01em}
+.hero p{margin:0;color:var(--muted);max-width:60ch}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:600}
+.note{font-size:13px;color:var(--muted);margin:0}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:var(--surface);padding:10px 16px;border-radius:10px;font-weight:600;font-size:15px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.sm{padding:6px 12px;font-size:14px}
+.idbox{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.sec{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);min-width:0}
+.sec-h{display:flex;align-items:center;gap:10px;width:100%;border:0;background:none;padding:15px 16px;text-align:left;border-radius:var(--r)}
+.sec-h:hover{background:var(--bg)}
+.sec-h .t{font-family:var(--f-display);font-weight:600;font-size:17px;margin-right:auto}
+.sec-h .cnt{font-family:var(--f-data);font-size:12px;color:var(--muted)}
+.sec-h .cnt.full{color:var(--ok)}
+.chev{flex:none;transition:transform .15s}
+.sec[data-open="1"] .chev{transform:rotate(90deg)}
+.sec-b{padding:6px 16px 18px;display:flex;flex-direction:column;gap:18px;border-top:1px solid var(--line)}
+.sec[data-open="0"] .sec-b{display:none}
+.sec-lead{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--muted);padding-top:10px}
+.fld{display:flex;flex-direction:column;gap:8px;min-width:0}
+.fld.inline{flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px}
+.fld.inline .fl{flex:1 1 220px}
+.fld.sub{margin-left:6px;padding-left:14px;border-left:2px solid var(--line)}
+.fl{display:flex;align-items:flex-start;gap:8px;font-weight:600;font-size:15px}
+.fl .u{font-weight:400;color:var(--muted);font-size:13px}
+input[type=text],input[type=number],input[type=date],select,textarea{border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:10px 12px;width:100%;min-width:0}
+textarea{min-height:120px;resize:vertical}
+.wrapin{display:flex;gap:8px;align-items:flex-start}
+.wrapin>*:first-child{flex:1}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:500;text-align:left}
+.seg button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.info{flex:none;width:22px;height:22px;border-radius:50%;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent);font:600 12px/1 var(--f-display);display:inline-grid;place-items:center;padding:0;margin-top:1px}
+.mic{flex:none;width:46px;height:46px;border:1px solid var(--line);background:var(--surface);border-radius:10px;display:grid;place-items:center;color:var(--muted)}
+.mic[aria-pressed="true"]{background:var(--bad);border-color:var(--bad);color:#fff}
+.interim{font-size:13px;color:var(--muted);font-style:italic}
+.vas{display:flex;gap:12px;align-items:center}
+.vas input[type=range]{flex:1;accent-color:var(--accent);min-width:0;height:28px}
+.vas input[type=range].unset{opacity:.4}
+.vas .v{font-family:var(--f-data);font-size:22px;font-weight:600;min-width:3ch;text-align:right}
+.ends{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+.finish{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 16px;display:flex;flex-direction:column;gap:14px}
+.code{font-family:var(--f-data);font-size:12px;word-break:break-all;background:var(--bg);border:1px dashed var(--line);border-radius:10px;padding:12px;max-height:160px;overflow:auto;user-select:all}
+.steps{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.review{display:flex;flex-direction:column;gap:4px;font-size:14px;background:var(--bg);border-radius:10px;padding:12px}
+.review b{font-weight:600}
+.ok{background:var(--ok-soft);color:var(--ok);border-radius:10px;padding:10px 12px;font-weight:600;font-size:14px}
+.warn{background:var(--warn-soft);color:var(--ink);border-radius:10px;padding:10px 12px;font-size:14px}
+.sheet{position:fixed;inset:0;z-index:30;background:var(--scrim);display:flex;align-items:center;justify-content:center;padding:16px}
+.sheet-card{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:14px;max-width:460px;width:100%;padding:18px;display:flex;flex-direction:column;gap:10px;max-height:80vh;overflow:auto;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+.sheet-card p{margin:0;font-size:15px}
+.sheet-card ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.sheet .x{border:0;background:none;font-size:24px;line-height:1;color:var(--muted);padding:2px 6px}
+@media (max-width:540px){.sheet{align-items:flex-end;padding:0}.sheet-card{border-radius:16px 16px 0 0;max-width:none;padding-bottom:max(18px,env(safe-area-inset-bottom,0px))}}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(24px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:9px 14px;border-radius:8px;font-size:14px;z-index:40;max-width:calc(100% - 32px)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main id="app"></main>
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheet-t"><div class="sheet-card"><div class="row" style="justify-content:space-between;flex-wrap:nowrap;align-items:flex-start"><h3 id="sheet-t" style="font-size:18px"></h3><button class="x" id="sheet-x" aria-label="Close">×</button></div><div id="sheet-b" style="display:flex;flex-direction:column;gap:8px"></div></div></div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+(function(){
+const YN=["Yes","No"];
+const EMP=[["Employed full-time","Working full-time"],["Employed part-time","Working part-time"],["Self-employed","Self-employed"],["Unemployed","Unemployed"],["Retired","Retired"],["Student","Student"],["Home duties","Home duties / carer"],["Unable to work (health)","Unable to work because of my health"],["Other","Other"]];
+const EMPLOYED=["Employed full-time","Employed part-time","Self-employed"];
+const JOBCH=[["No change","No change"],["Reduced – arthritis prevented old duties","I do less, because my arthritis stopped me doing my old duties"],["Increased – arthritis less troublesome","I do more, because my arthritis is less troublesome"],["Changed, not because of arthritis","Changed, but not because of my arthritis"]];
+const BIOLOGICS=["Benepali (Etanercept)","Cimzia (Certolizumab pegol)","Enbrel (Etanercept)","Humira (Adalimumab)","Imraldi (Adalimumab)","Inflectra (Infliximab)","Taltz (Ixekizumab)","MabThera (Rituximab)","Olumiant (Baricitinib)","Orencia (Abatacept)","Remicade (Infliximab)","Remsima (Infliximab)","RoActemra (Tocilizumab)","Simponi (Golimumab)","Xeljanz (Tofacitinib)","Other"];
+const BIO_STOP=[["Inefficacy from the start","It never worked for me"],["Loss of efficacy","It worked at first, then stopped working"],["Recurring infections","I kept getting infections"],["Intolerance","Side effects I couldn't put up with"],["Reaction","A reaction to the injection or drip"],["Toxicity","Abnormal blood tests"],["Economic","Cost or funding"],["Biosimilar switch","Switched to a biosimilar version"],["Pregnancy related","Pregnancy or planning a pregnancy"],["Adverse event","Another health problem"],["Other","Another reason"]];
+const BIO_INT=[["Infection","An infection"],["Surgery","Surgery"],["Reaction","A reaction"],["Economic","Cost or funding"],["Prescription lapse","My prescription ran out"]];
+const DMARDS=[["mtx","Methotrexate"],["ssz","Sulfasalazine (Salazopyrin)"],["hcq","Hydroxychloroquine (Plaquenil)"],["lef","Leflunomide (Arava)"],["oth","Another arthritis tablet or injection"]];
+const OS_DUR=["1–2 weeks","2–4 weeks","4–6 weeks","6–12 weeks","3–6 months","6–12 months","1–5 years","5–10 years","10+ years"];
+const INJ=["Shoulder","Elbow","Wrist","Hip","Knee","Ankle","Other"];
+const CANCER_SITES=["Breast","Lung","Colorectal","Prostate","Skin – melanoma","Skin – non-melanoma","Lymphoma","Leukaemia","Cervix / uterus","Bladder / kidney","Other"];
+const COMORB=[["ihd","Heart disease (angina or heart attack)","Ischaemic heart disease"],["hf","Heart failure",""],["cvd","Stroke or mini-stroke (TIA)","Cerebrovascular disease"],["htn","High blood pressure","Hypertension"],["lipid","High cholesterol","Hyperlipidaemia"],["thyroid","Underactive thyroid","Hypothyroidism"],["op","Osteoporosis (thin bones)",""],["dep","Depression",""],["dm","Diabetes",""],["cld","Chronic lung disease (e.g. COPD)",""],["asthma","Asthma",""],["bronch","Bronchiectasis",""],["emph","Emphysema",""],["fib","Lung fibrosis (scarring)",""],["ca","Cancer",""]];
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const is=(k,v)=>d=>Array.isArray(d[k])?d[k].includes(v):d[k]===v;
+const and=(...f)=>d=>f.every(g=>g(d));
+const isEmp=d=>EMPLOYED.includes(d.empStatus);
+function toast(m){const t=$("#toast");t.textContent=m;t.hidden=false;clearTimeout(toast.h);toast.h=setTimeout(()=>t.hidden=true,2600)}
+const store={get(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}},del(k){try{localStorage.removeItem(k)}catch(e){}}};
+const yn=(k,label,info,o={})=>({k,label,type:"seg",opts:YN,info,inline:true,...o});
+
+const S=[
+ {id:"feel",title:"How you've been",fields:[
+  {k:"ptSummary",label:"How have you been since your last visit?",type:"textarea",dict:1,info:"In your own words. You might mention how your joints feel, pain, tiredness, morning stiffness and how long it lasts, flare-ups, sleep, side effects, and anything that worries you. Tap the microphone to speak instead of typing."},
+  {k:"ptGA",label:"Considering all the ways your arthritis affects you, how are you doing today?",type:"vas",ends:["Very well","Very poorly"],info:"Move the slider from 0 (very well) to 10 (very poorly). There is no right answer; go with your first instinct. Your doctor may ask you again on the day."},
+  {k:"weight",label:"Your weight, if you've weighed yourself recently",unit:"kg",type:"number",min:25,max:250,step:0.1,inline:1,info:"Optional. In kilograms. To convert from stone: stone × 6.35 (for example 11 stone ≈ 70 kg). Leave blank if unsure; it will be measured in clinic."}]},
+ {id:"work",title:"Work",fields:[
+  {k:"empStatus",label:"Which best describes you now?",type:"seg",opts:EMP,info:"Choose the one that fits best today."},
+  {k:"empStatusOther",label:"Please describe",type:"text",sub:1,showIf:is("empStatus","Other"),info:"A few words is fine."},
+  {k:"empSector",label:"What kind of work do you do?",type:"text",sub:1,showIf:isEmp,info:"For example: nurse, builder, office work, teacher, shop work, farming."},
+  yn("workingPay","Are you working for pay at the moment?","Answer Yes if you are doing any paid work, even part-time.",{sub:1,showIf:isEmp}),
+  {k:"jobChange",label:"Has your work changed since your last visit?",type:"seg",opts:JOBCH,sub:1,showIf:and(isEmp,is("workingPay","Yes")),info:"Choose the one that fits best."},
+  {k:"hoursWeek",label:"Paid hours per week last month",unit:"hours",type:"number",min:0,max:100,inline:1,sub:1,showIf:and(isEmp,is("workingPay","Yes")),info:"About how many hours a week you were paid for, on average, over the last month."},
+  {k:"sickDays",label:"Sick days off work last month",unit:"days",type:"number",min:0,max:31,inline:1,sub:1,showIf:and(isEmp,is("workingPay","Yes")),info:"Days you took off work because you were unwell, for any reason, in the last month."}]},
+ {id:"health",title:"Other health conditions",lead:"Since your last visit, have you been treated for any of these?",allNo:COMORB.map(c=>"cm_"+c[0]),fields:[]},
+ {id:"meds",title:"Your arthritis medicines",fields:[
+  {type:"head",label:"Biologic or targeted medicines"},
+  {k:"pt_onBio",label:"Are you on a biologic or targeted medicine?",type:"seg",opts:["Yes","No","Not sure"],inline:1,info:"These are usually injections, drips or newer tablets, for example Humira, Imraldi, Enbrel, Benepali, Cimzia, Simponi, Orencia, RoActemra, MabThera, Remsima, Olumiant or Xeljanz."},
+  yn("bioDose","Has the dose changed since your last visit?","Including how often you take it.",{sub:1,showIf:is("pt_onBio","Yes")}),
+  yn("bioStop","Have you stopped it for good?","Answer Yes if you or your doctor stopped it and you are not going back on it.",{sub:1,showIf:is("pt_onBio","Yes")}),
+  {k:"bioStopDate",label:"When did you stop?",type:"date",inline:1,sub:1,showIf:and(is("pt_onBio","Yes"),is("bioStop","Yes")),info:"Roughly is fine."},
+  {k:"bioStopReason",label:"Why did it stop?",type:"seg",opts:BIO_STOP,sub:1,showIf:and(is("pt_onBio","Yes"),is("bioStop","Yes")),info:"Choose the main reason."},
+  yn("bioInt","Did you pause it for a while and then restart?","For example around an infection, an operation, or because a prescription ran out.",{sub:1,showIf:is("pt_onBio","Yes")}),
+  {k:"bioIntReason",label:"Why was it paused?",type:"seg",opts:BIO_INT,sub:1,showIf:and(is("pt_onBio","Yes"),is("bioInt","Yes")),info:"Choose the main reason."},
+  yn("bioSw1","Have you switched to a different one?","Answer Yes if you have started a new biologic or targeted medicine since your last visit.",{sub:1,showIf:is("pt_onBio","Yes")}),
+  {k:"bioSw1_drug",label:"Which one are you on now?",type:"select",opts:BIOLOGICS,sub:1,showIf:and(is("pt_onBio","Yes"),is("bioSw1","Yes")),info:"The name is on the box or pen. Choose Other if it isn't listed."},
+  {k:"bioSw1_start",label:"When did you start it?",type:"date",inline:1,sub:1,showIf:and(is("pt_onBio","Yes"),is("bioSw1","Yes")),info:"Roughly is fine."},
+  {type:"head",label:"Other arthritis medicines"},
+  yn("dmStart","Have you started any of these since your last visit?","Methotrexate, sulfasalazine, hydroxychloroquine, leflunomide or another long-term arthritis medicine."),
+  {k:"pt_dmStart",label:"Which did you start?",type:"multi",opts:DMARDS.map(x=>[x[0],x[1]]),sub:1,showIf:is("dmStart","Yes"),info:"Tick all that apply."},
+  yn("dmStop","Have you stopped any of these since your last visit?","Any long-term arthritis tablet or injection you have stopped."),
+  {k:"pt_dmStop",label:"Which did you stop?",type:"multi",opts:DMARDS.map(x=>[x[0],x[1]]),sub:1,showIf:is("dmStop","Yes"),info:"Tick all that apply."},
+  {k:"pt_dmStopWhy",label:"Why did you stop?",type:"multi",opts:["Liver toxicity","Gastrointestinal upset","Pregnancy","Nausea","Other"].map(x=>[x,{"Liver toxicity":"Liver blood tests were abnormal","Gastrointestinal upset":"Stomach or bowel upset","Pregnancy":"Pregnancy or planning one","Nausea":"Feeling sick","Other":"Another reason"}[x]]),sub:1,showIf:is("dmStop","Yes"),info:"Tick all that apply."},
+  {type:"head",label:"Steroids (last 6 months)"},
+  yn("osYes","Steroid tablets, such as prednisolone?","Any course in the last 6 months, including today."),
+  {k:"osDur",label:"For how long in total?",type:"seg",opts:OS_DUR,sub:1,showIf:is("osYes","Yes"),info:"Your best estimate for the most recent course."},
+  yn("osNow","Are you still taking them?","",{sub:1,showIf:is("osYes","Yes")}),
+  yn("imYes","A steroid injection into a muscle (e.g. buttock)?","Often called a 'Depo' or 'Depo-Medrone' injection."),
+  {k:"imFreq",label:"How often?",type:"seg",opts:["Once only","More frequently"],opts2:["Once only","More than once"],inline:1,sub:1,showIf:is("imYes","Yes"),info:"Once, or more than once in the last 6 months."},
+  yn("jiYes","A steroid injection into a joint?","An injection given directly into a painful joint."),
+  {k:"jiJoints",label:"Which joint(s)?",type:"multi",opts:INJ,sub:1,showIf:is("jiYes","Yes"),info:"Tick all that apply."}]},
+ {id:"ask",title:"Questions for your appointment",fields:[
+  {k:"ptQuestions",label:"Anything you'd like to ask or discuss?",type:"textarea",dict:1,info:"For example: plans for pregnancy, travel or vaccines, side effects, work or exercise. Your rheumatology team will see this before you arrive."}]}
+];
+// co-morbidities
+const H=S.find(s=>s.id==="health").fields;
+COMORB.forEach(([id,l,med])=>{const k="cm_"+id,y=is(k,"Yes");
+  H.push(yn(k,l,med?`Also called ${med.toLowerCase()}. Answer Yes if you have had treatment or check-ups for it since your last visit.`:"Answer Yes if you have had treatment or check-ups for it since your last visit."));
+  if(id==="dm") H.push({k:"cm_dm_type",label:"Which type?",type:"seg",opts:["Type 1","Type 2"],inline:1,sub:1,showIf:y,info:"Type 1 usually starts young and always needs insulin. If unsure, leave blank."});
+  if(id==="ca") H.push({k:"cm_ca_site",label:"Where was the cancer?",type:"select",opts:CANCER_SITES,sub:1,showIf:y,info:"Choose the closest match."});
+  H.push({k:k+"_yr",label:"Year first diagnosed",type:"number",min:1930,max:2030,inline:1,sub:1,showIf:y,info:"Four digits, e.g. 2018. Your best guess is fine."});
+});
+S.find(s=>s.id==="meds").fields.find(f=>f.k==="imFreq").opts=[["Once only","Once only"],["More frequently","More than once"]];
+const F={},SO={};S.forEach(s=>s.fields.forEach(f=>{if(f.k){F[f.k]=f;SO[f.k]=s.id;}}));
+const optv=o=>Array.isArray(o)?o:[o,o];
+
+// ---- state ----
+const DKEY="rabri-pre-draft";
+const hashId=(location.hash||"").replace(/^#/,"").replace(/^id-/,"");
+let saved=store.get(DKEY)||{};
+let d=Object.assign({},saved.d||{});
+if(hashId) d.rabriId=hashId;
+let openS=saved.open||{feel:1}, done=false, downloads=null;
+
+function render(){
+  let h=`<div class="hero"><div class="eyebrow">Rheumatology clinic · RABRI</div><h1>Before your appointment</h1>
+  <p>Answer what you can before you come in. It takes about 5 minutes. Skip anything you're unsure about; your team will go through it with you.</p></div>
+  <div class="idbox"><label class="fld"><span class="fl"><span>Your RABRI ID</span>${INFO("__id","RABRI ID")}</span><input id="f-rabriId" data-k="rabriId" type="text" autocomplete="off" value="${esc(d.rabriId||"")}" placeholder="From your clinic letter"></label>
+  <label class="fld"><span class="fl"><span>Appointment date</span>${INFO("__appt","Appointment date")}</span><input id="f-apptDate" data-k="apptDate" type="date" value="${esc(d.apptDate||"")}"></label></div>`;
+  for(const s of S){const o=openS[s.id]?1:0;
+    h+=`<section class="sec" id="sec-${s.id}" data-open="${o}"><button type="button" class="sec-h" data-toggle="${s.id}" aria-expanded="${!!o}"><svg class="chev" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M5 2 L10 7 L5 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="t">${esc(s.title)}</span><span class="cnt" data-cnt="${s.id}"></span></button>
+    <div class="sec-b">${s.lead||s.allNo?`<div class="sec-lead"><span style="margin-right:auto">${esc(s.lead||"")}</span>${s.allNo?`<button type="button" class="btn sm" data-allno="${s.id}">None of these</button>`:""}</div>`:""}${s.fields.map(fieldHTML).join("")}</div></section>`;}
+  h+=`<section class="finish" id="finish"><h2 style="font-size:20px">Send your answers</h2>
+   <p class="note" style="font-size:14px">When you're ready, create your reply. You'll get a short code to copy into an email to your rheumatology team. Your answers are only sent when you email the code.</p>
+   <div class="row"><button class="btn primary" data-act="make">Create my reply</button></div><div id="out"></div></section>
+   <p class="note">Please don't include your name, address or hospital number anywhere on this form. Your answers stay on this device until you send them.</p>`;
+  $("#app").innerHTML=h; update();
+}
+const INFO=(k,l)=>`<button class="info" type="button" data-info="${esc(k)}" aria-label="Help: ${esc(l)}">i</button>`;
+const MIC=`<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" fill="currentColor"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`;
+function fieldHTML(f){
+  if(f.type==="head") return `<div style="font-family:var(--f-display);font-weight:600;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.07em;padding-top:4px">${esc(f.label)}</div>`;
+  const k=f.k,v=d[k],cls=["fld"];if(f.inline)cls.push("inline");if(f.sub)cls.push("sub");
+  const lab=`<span class="fl"><span>${esc(f.label)}${f.unit?` <span class="u">(${esc(f.unit)})</span>`:""}</span>${f.info?INFO(k,f.label):""}</span>`;
+  let c="";
+  if(f.type==="seg"||f.type==="multi") c=`<div class="seg" role="group" aria-label="${esc(f.label)}">${f.opts.map(o=>{const[ov,ol]=optv(o);const on=f.type==="multi"?(v||[]).includes(ov):v===ov;return `<button type="button" data-seg="${k}" data-val="${esc(ov)}" aria-pressed="${on}">${esc(ol)}</button>`}).join("")}</div>`;
+  else if(f.type==="select") c=`<select id="f-${k}" data-k="${k}"><option value="">Choose…</option>${f.opts.map(o=>`<option ${v===o?"selected":""}>${esc(o)}</option>`).join("")}</select>`;
+  else if(f.type==="number") c=`<input id="f-${k}" data-k="${k}" type="number" inputmode="decimal" min="${f.min}" max="${f.max}" step="${f.step||1}" value="${esc(v??"")}" style="width:130px">`;
+  else if(f.type==="date") c=`<input id="f-${k}" data-k="${k}" type="date" value="${esc(v??"")}" style="width:180px">`;
+  else if(f.type==="vas") c=`<div><div class="vas"><input type="range" id="f-${k}" data-vas="${k}" min="0" max="10" step="0.5" value="${v??5}" class="${v==null?"unset":""}" aria-label="${esc(f.label)}"><span class="v" id="v-${k}">${v??"–"}</span></div><div class="ends"><span>0 · ${esc(f.ends[0])}</span><span>10 · ${esc(f.ends[1])}</span></div></div>`;
+  else if(f.type==="textarea") c=`<div class="wrapin"><textarea id="f-${k}" data-k="${k}" placeholder="Type here, or tap the microphone to speak">${esc(v??"")}</textarea><button type="button" class="mic" data-mic="${k}" aria-pressed="false" aria-label="Speak your answer">${MIC}</button></div><div class="interim" id="int-${k}" hidden></div>`;
+  else c=`<input id="f-${k}" data-k="${k}" type="text" value="${esc(v??"")}" autocomplete="off">`;
+  return `<div class="${cls.join(" ")}" data-fk="${k}">${lab}${c}</div>`;
+}
+const vis=k=>!F[k].showIf||F[k].showIf(d);
+const has=k=>{const v=d[k];return Array.isArray(v)?v.length>0:v!==""&&v!=null};
+function update(){
+  document.querySelectorAll("[data-fk]").forEach(e=>e.hidden=!vis(e.dataset.fk));
+  for(const s of S){const ks=Object.keys(F).filter(k=>SO[k]===s.id&&vis(k));const g=ks.filter(has).length;const c=document.querySelector(`[data-cnt="${s.id}"]`);if(c){c.textContent=`${g}/${ks.length}`;c.classList.toggle("full",g===ks.length);}}
+}
+let st=null;function changed(){update();if(done){done=false;$("#out").innerHTML=`<p class="warn">You changed an answer. Create your reply again so the code includes it.</p>`;}clearTimeout(st);st=setTimeout(()=>store.set(DKEY,{d,open:openS}),300);}
+
+// ---- reply code ----
+function payload(){
+  const a={};for(const k in F){if(vis(k)&&has(k)&&k!=="ptSummary"&&k!=="ptQuestions")a[k]=d[k];}
+  return {v:1,rabriId:(d.rabriId||"").trim(),apptDate:d.apptDate||"",completedOn:new Date().toISOString(),summary:(d.ptSummary||"").trim(),questions:(d.ptQuestions||"").trim(),answers:a};
+}
+const enc=o=>"RABRI1:"+btoa(unescape(encodeURIComponent(JSON.stringify(o))))+":END";
+function make(){
+  if(!(d.rabriId||"").trim()){toast("Add your RABRI ID at the top first");$("#f-rabriId").focus();return;}
+  const p=payload(),code=enc(p),n=Object.keys(p.answers).length+(p.summary?1:0)+(p.questions?1:0);
+  const body=`Pre-visit questionnaire for RABRI ID ${p.rabriId}${p.apptDate?` (appointment ${p.apptDate})`:""}.\n\nPlease paste this code into RABRI:\n\n${code}`;
+  done=true;
+  $("#out").innerHTML=`<div class="ok">Your reply is ready: ${n} answer${n===1?"":"s"}.</div>
+   <ol class="steps"><li>Tap <b>Copy email text</b>.</li><li>Open a new email to your rheumatology team, using the address in your appointment letter.</li><li>Paste, then send. Use the subject line “Pre-visit form – ${esc(p.rabriId)}”.</li></ol>
+   <div class="row"><button class="btn primary" data-act="copy">Copy email text</button>${downloads||!window.claude?`<button class="btn" data-act="save">Save as a file</button>`:""}</div>
+   <div class="code" id="code" tabindex="0" aria-label="Your reply code">${esc(code)}</div>
+   ${p.summary?`<div class="review"><b>What you told us</b><span>${esc(p.summary)}</span></div>`:""}
+   <button class="btn sm" data-act="clear" style="align-self:flex-start">Clear my answers from this device</button>`;
+  $("#out").dataset.body=body;
+}
+async function copy(){const t=$("#out").dataset.body;try{await navigator.clipboard.writeText(t);toast("Copied. Paste it into an email to your clinic.");}catch(e){const r=document.createRange();r.selectNodeContents($("#code"));const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Copy didn't work here. The code is selected; copy it yourself.");}}
+async function save(){const fn=`rabri-previsit-${(d.rabriId||"").replace(/[^A-Za-z0-9-]/g,"")}.txt`;
+  if(!downloads){const u=URL.createObjectURL(new Blob([$("#out").dataset.body],{type:"text/plain"}));const a=document.createElement("a");a.href=u;a.download=fn;document.body.appendChild(a);a.click();a.remove();toast("Saved. Attach the file to an email to your clinic.");return;}
+  try{await downloads.save({filename:`rabri-previsit-${(d.rabriId||"").replace(/[^A-Za-z0-9-]/g,"")}.txt`,data:$("#out").dataset.body});toast("Saved. Attach the file to an email to your clinic.");}catch(e){if(e?.code!=="declined")toast("Saving isn't available here. Use Copy email text instead.");}}
+
+// ---- dictation ----
+let rec=null,recK=null;
+function dictHelp(btn){openSheet("Speaking your answer",`<p>Your browser won't let this page use the microphone, but your device's own dictation works in any box. Tap into the box first, then:</p><ul><li><b>iPhone / iPad:</b> tap the microphone on the keyboard</li><li><b>Android:</b> tap the microphone on the keyboard</li><li><b>Windows:</b> press Win + H</li><li><b>Mac:</b> press the Fn / Globe key twice</li></ul>`,btn);}
+function dictate(k,btn){
+  const el=document.getElementById("f-"+k);if(recK===k){try{rec.stop()}catch(e){}return;} if(rec){try{rec.stop()}catch(e){}}
+  el.focus(); const SR=window.SpeechRecognition||window.webkitSpeechRecognition; if(!SR){dictHelp(btn);return;}
+  let r;try{r=new SR()}catch(e){dictHelp(btn);return;} r.lang="en-IE";r.continuous=true;r.interimResults=true;const int=document.getElementById("int-"+k);
+  r.onresult=e=>{let fin="",tmp="";for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;e.results[i].isFinal?fin+=t:tmp+=t;}
+    if(fin){el.value=(el.value&&!/\s$/.test(el.value)?el.value+" ":el.value)+fin.trim();d[k]=el.value;changed();} int.hidden=!tmp;int.textContent=tmp;};
+  r.onerror=e=>{if(["not-allowed","service-not-allowed","audio-capture","network"].includes(e.error))dictHelp(btn);};
+  r.onend=()=>{btn.setAttribute("aria-pressed","false");int.hidden=true;if(rec===r){rec=null;recK=null;}};
+  try{r.start();rec=r;recK=k;btn.setAttribute("aria-pressed","true");toast("Listening… tap the microphone again to stop");}catch(e){dictHelp(btn);}
+}
+
+// ---- info ----
+const EX={__id:["Your RABRI ID","This is on the letter or email from your clinic. It lets the team match your answers to your record without using your name."],__appt:["Appointment date","The date of your next rheumatology appointment, if you know it."]};
+let opener=null;
+function openSheet(t,b,btn){opener=btn;$("#sheet-t").textContent=t;$("#sheet-b").innerHTML=b;$("#sheet").hidden=false;$("#sheet-x").focus();}
+function closeSheet(){$("#sheet").hidden=true;opener&&opener.focus();opener=null;}
+function info(k,btn){const[t,b]=EX[k]||[F[k].label,F[k].info];openSheet(t,`<p>${esc(b)}</p>`,btn);}
+
+// ---- events ----
+document.addEventListener("click",e=>{
+  if(e.target===$("#sheet")){closeSheet();return;}
+  const t=e.target.closest("button");if(!t)return;
+  if(t.id==="sheet-x"){closeSheet();return;}
+  if(t.dataset.info){info(t.dataset.info,t);return;}
+  if(t.dataset.toggle){const s=t.closest(".sec"),o=s.dataset.open==="1"?0:1;s.dataset.open=o;t.setAttribute("aria-expanded",!!o);openS[t.dataset.toggle]=o;store.set(DKEY,{d,open:openS});return;}
+  if(t.dataset.seg){const k=t.dataset.seg,v=t.dataset.val;
+    if(F[k].type==="multi"){const a=d[k]=d[k]||[];const i=a.indexOf(v);i>=0?a.splice(i,1):a.push(v);t.setAttribute("aria-pressed",String(i<0));}
+    else{d[k]=d[k]===v?"":v;t.parentElement.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.val===d[k])));}
+    changed();return;}
+  if(t.dataset.allno){const s=S.find(x=>x.id===t.dataset.allno);s.allNo.forEach(k=>{if(!d[k])d[k]="No";});document.querySelectorAll(`#sec-${s.id} [data-seg]`).forEach(b=>b.setAttribute("aria-pressed",String(d[b.dataset.seg]===b.dataset.val)));changed();return;}
+  if(t.dataset.mic){dictate(t.dataset.mic,t);return;}
+  const a=t.dataset.act;
+  if(a==="make")make(); if(a==="copy")copy(); if(a==="save")save();
+  if(a==="clear"){store.del(DKEY);const id=d.rabriId;d={rabriId:id};done=false;render();toast("Your answers were cleared from this device");}
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#sheet").hidden)closeSheet();});
+document.addEventListener("input",e=>{const el=e.target;
+  if(el.dataset.vas){const k=el.dataset.vas;d[k]=+el.value;el.classList.remove("unset");$("#v-"+k).textContent=d[k];changed();return;}
+  if(el.dataset.k){d[el.dataset.k]=el.value;changed();}});
+document.addEventListener("change",e=>{if(e.target.tagName==="SELECT"&&e.target.dataset.k){d[e.target.dataset.k]=e.target.value;changed();}});
+
+render();
+(async()=>{try{downloads=await window.claude?.use?.("downloads");}catch(e){}})();
+})();
+</script>
+</body>
+</html>
